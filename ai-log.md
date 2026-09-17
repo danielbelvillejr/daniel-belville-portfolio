@@ -140,3 +140,17 @@ Do not modify or generate replacement files yet. I want to review the plan befor
 ## Implementation Notes
 
 To be added.
+
+## AI Plan Review
+
+### Accepted Plan Element
+I accepted the plan to use content-notes.md as the source of truth and to make small, file-specific changes instead of rewriting the entire portfolio.
+
+### Revised Plan Element
+I revised the plan so that JavaScript will only be changed if testing shows that navigation or another interaction is not working correctly. I do not want unnecessary JavaScript changes.
+
+### Risk the AI Identified
+The AI identified the risk that placeholder content from the original template could remain in the final published site.
+
+### Risk the AI Missed
+The AI did not explicitly identify the risk of accidentally publishing contact information or other personal details that I may not want publicly visible.
