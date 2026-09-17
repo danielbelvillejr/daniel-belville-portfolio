@@ -168,3 +168,18 @@ The AI did not explicitly identify the risk of accidentally publishing contact i
 During the review, I checked the AI-generated changes for correctness, privacy, accessibility, unnecessary changes, and invented content. I confirmed that the professional information used on the site came from `content-notes.md` and that placeholder information from the original template was removed.
 
 I also reviewed whether the AI changed more code than necessary. Most changes were limited to `index.html`, and the existing CSS and JavaScript were left unchanged because there was not yet evidence that they needed modification.
+
+## Test Results
+
+| Test | Result and Evidence |
+|---|---|
+| Page loads without a visible error | Pass - The portfolio page loads and displays the expected layout without a visible error. |
+| Navigation links reach the intended sections | Pass - About, Resume, and Portfolio navigation buttons display the correct sections. |
+| Personal content replaces template placeholders | Pass - Daniel Belville, Sales Engineer / Presales Consultant, education, experience, skills, and project content are displayed instead of the original template identity. |
+| Project links and external links work | Pass with limitation - Project cards currently do not include external project URLs because none were provided in `content-notes.md`. Dead placeholder links were removed during review. |
+| Layout remains usable on a narrow viewport | Pass - The site remains readable and usable when viewed at a narrow mobile-sized browser width. |
+| Keyboard navigation is usable | Pass - The navigation controls can be reached and activated using the keyboard. |
+| Images have meaningful alternative text or are decorative | Pass - Project images use descriptive alternative text. Unrelated template avatar content was removed. |
+| No secrets or private data are exposed | Pass - No passwords, API keys, private documents, or sensitive personal contact information are included. |
+| Browser console has no unexplained errors | Pass - No unexplained JavaScript errors were observed during testing. |
+| Implementation satisfies the five acceptance criteria | Pass - The required identity, About content, three projects, navigation, and mobile usability criteria are satisfied. |
