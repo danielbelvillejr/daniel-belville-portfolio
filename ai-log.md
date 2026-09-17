@@ -154,3 +154,17 @@ The AI identified the risk that placeholder content from the original template c
 
 ### Risk the AI Missed
 The AI did not explicitly identify the risk of accidentally publishing contact information or other personal details that I may not want publicly visible.
+
+## Human Code Review
+
+| File or Region | What the AI Changed | What I Verified | Change Made After Review |
+|---|---|---|---|
+| `index.html` - Sidebar and About section | Replaced the template name, role, and biography with my own professional information and removed fake contact information. | I verified that my name and professional role are correct, the About text matches `content-notes.md`, and the template email, phone number, birthday, and location were removed. | No additional change was needed. |
+| `index.html` - Resume section | Replaced the template education, work experience, and skills with my own education, Bizzdesign experience, and technical skills. | I verified that the education and work information matches `content-notes.md` and that no employment history, education, or certifications were invented. | I noted that the skill percentage bars are visual estimates and may be removed later because they are not factual measurements from my resume. |
+| `index.html` - Portfolio and navigation | Replaced template projects with Activity Finder, AI and Enterprise Architecture Research, and Unity Game Development. Removed unused Blog and Contact navigation and template content. | I verified that all three projects came from `content-notes.md`, the visible navigation matches the remaining sections, and unrelated template projects and placeholder content were removed. | Dead `#` project links were removed so the project cards do not appear to link somewhere when no real project URL was provided. |
+
+### Review Summary
+
+During the review, I checked the AI-generated changes for correctness, privacy, accessibility, unnecessary changes, and invented content. I confirmed that the professional information used on the site came from `content-notes.md` and that placeholder information from the original template was removed.
+
+I also reviewed whether the AI changed more code than necessary. Most changes were limited to `index.html`, and the existing CSS and JavaScript were left unchanged because there was not yet evidence that they needed modification.
